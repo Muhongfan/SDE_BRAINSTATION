@@ -38,6 +38,7 @@ HTML is a markup language used to structure content on the web. It provides a st
         </header>
 
         <figure> 
+            <!-- The details of how to locate the imgs can be found :https://synapse.brainstation.io/software-engineering-bootcamp/student-content/00a30322-4623-551a-8ad5-e033d62f59c2-->
             <img src="path/pic.gif">
             <figcaption> Figure 1.1: An image </figcaption>
         </figure>
@@ -80,7 +81,7 @@ CSS is a style sheet language used to control the presentation and layout of HTM
 ## Create an 'styles.css'
 ***Note:*** Type `space` when coding will not be reflected in the live pages.
 
-
+We can find the more details about selectors: https://synapse.brainstation.io/software-engineering-bootcamp/student-content/3a7f3fbc-0ffe-560b-9ebc-8d8ac5298eca
 1. Element Selectors 
 ```css
 /* Link the stylesheet to any .html */
