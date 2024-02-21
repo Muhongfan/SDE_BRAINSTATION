@@ -38,7 +38,6 @@ HTML is a markup language used to structure content on the web. It provides a st
         </header>
 
         <figure> 
-            <!-- The details of how to locate the imgs can be found :https://synapse.brainstation.io/software-engineering-bootcamp/student-content/00a30322-4623-551a-8ad5-e033d62f59c2-->
             <img src="path/pic.gif">
             <figcaption> Figure 1.1: An image </figcaption>
         </figure>
@@ -61,6 +60,8 @@ HTML is a markup language used to structure content on the web. It provides a st
 * What are the differents of article, section, div?
     
     1. Semantic elements:Use `<article>`, `<figure>`
+        The details of how to locate the local imgs can be found :https://synapse.brainstation.io/software-engineering-bootcamp/student-content/00a30322-4623-551a-8ad5-e033d62f59c2-->
+
         
         * for example: 
         ```html
