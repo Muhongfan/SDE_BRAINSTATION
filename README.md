@@ -1,4 +1,4 @@
-# HTML(Hypertext Markup Language)
+## HTML(Hypertext Markup Language)
 HTML is a markup language used to structure content on the web. It provides a standardized way to create and organize text, images, links, forms, and other types of content within a web page.
 ## Create an 'index.html'
 1. open a vscode workplace
@@ -77,7 +77,7 @@ HTML is a markup language used to structure content on the web. It provides a st
 
 * `MDN`: helps you seach for html elements and descriptions.
 
-# CSS (Cascading Style Sheets):
+## CSS (Cascading Style Sheets):
 CSS is a style sheet language used to control the presentation and layout of HTML documents. It enables designers and developers to apply styles, such as colors, fonts, spacing, and positioning, to enhance the visual appeal and user experience of a web page.
 ## Create an 'styles.css'
 
@@ -325,4 +325,36 @@ specify a length relative to another length.
 3. Font size is bigger than the parent box (if height of parent is fixed and child is bigger than current box)
 4. viewpoint represents the visible area of a web page in a browser.
 
+## CSS Display
+To display the HTML positions elements.
+
+1. Display property has four values
+* block
+Default: <p><div>
+![block](img/block.png)
+* inline-block
+Default: <img><button>
+![inline-block](img/inlineblock.png)
+* inline
+Default: <span><a>
+    Often used for text/paragraphs
+![inline](img/inline.png)
+
+2. Hiding/Showing
+
+`display` keeps spaces while `visiblility` does not keep the space
+
+![Hiding and Showing elements](img/showing.png)
+
+
+```css
+<!--Click on and showing/displaying answer-->
+.reveal-answer:hover{
+
+}
+
+.reveal-answer:hover ~ .answer{
+}
+
+```
 
