@@ -358,3 +358,59 @@ Default: <span><a>
 
 ```
 
+# Flex
+Advancded understanding to box layout
+
+Last week we have learnt what was`block/inline-block`, here we discussed `flex` which avoids use of tricks to handle alignment such as centering.
+
+Basic info:
+* `flex-direction`: `row`(default), `row-reverse`, `column` and `column-reverse`
+* **flex container**: element with `display` property set to `flex`
+* **flex items**: The child elements of a flex container.
+![Flex](img/flex.png)
+
+Alignment info:
+* `justify-content`: align the contents along the row axis
+![justify-content](img/justify-content.png)
+![justify-content2](img/justify-content2.png)
+* `align-items`: align the content along the column axis
+![alt text](img/align-item.png)
+* `flex-wrap`: to the next line if it does not fit in the available space.
+* Vertical & Horizontal Centering
+```css
+.container{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.flex-items{
+    margin:auto;
+}
+```
+
+* `align-self`:
+![align-self](img/algn-self.png)
+
+* `flex-flow`: `row nowrap`(default), `flex-flow:<flex-direction> <flex-wrap>
+
+* `align-content`: 
+
+![alt text](img/align-content.png)
+
+* Order of child elements
+
+![alt text](img/order.png)
+
+* flew-grow: the remaining space of a **flex item**, default is 0
+
+* flew-shrink: the space of a **flex item** takes up, default is 1
+
+## Telling your story
+
+lean into the passion to
+
+Passion 
+Desire 
+Education
+![alt text](img/craftstory.png)
+![alt text](img/craftstory-template.png)
