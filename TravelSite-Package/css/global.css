@@ -1,0 +1,104 @@
+body{
+    font-family: verdana;
+}
+.navigation{
+    height: 3rem;
+    margin-left: 0.625rem;
+    
+    display: flex; /* Use Flexbox */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically in the center */
+    width: 90%;
+    background-color: #FFFFFF;
+}
+.navigation h1{
+    margin-left: 5%;
+    font-size: larger;
+    color: #335576;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline; /* Align items vertically in the center */
+}
+
+.navigation ul{
+    list-style: none; /* Removes bullets/asterisks from unordered lists */
+    display: flex;
+}
+
+.navigation li {
+    display: inline-block;
+    align-items: center;
+
+    color: #393939;
+    margin: 10px;
+    font-size: 1rem;
+}
+.navigation a {
+    text-decoration: none; /* Underline for the active link */
+    color: inherit;
+}
+ 
+.active{
+    padding-bottom: 10px;
+    border-bottom: 2px solid #DB7A4E;
+}
+
+.gallery__cards{
+    display: flex;
+    justify-content: center;
+
+}
+.card{
+    width: 240px;
+    height: 360px;
+    margin: 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+
+    position: relative;
+
+}
+
+
+#Footer{
+    color: #335576;
+    padding: 1rem 0 1rem 0;
+    background-color: #FEFAF5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#Footer div h3{
+    font-size:x-large;
+    margin-bottom: 2rem;
+}
+.Footer__sub{
+    font-size: x-small;
+    color: #DB7A4E;
+}
+.Footer__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Footer__content p {
+    margin-top: 0;
+    margin-right: 4rem; /* Adjust the margin as needed */
+}
+.Footer__content a{
+    margin: 0;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+.icon{
+    margin-right: 1rem;
+    width: auto;
+    height: 30px;
+}
+
+
+
