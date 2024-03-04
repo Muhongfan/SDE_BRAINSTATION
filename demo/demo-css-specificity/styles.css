@@ -1,0 +1,48 @@
+body {
+  background-color: bisque;
+}
+
+div {
+  margin-bottom: 2rem;
+}
+
+/* Element selector (1, 0, 1) = 101 */
+div#first-div {
+  background-color: purple;
+  color: white;
+}
+
+/* Class selector (0, 1, 0) = 10 */
+.conflict-example {
+  font-size: 2em;
+  font-style: italic;
+  padding: 1rem;
+
+  color: yellow;
+}
+
+/* Id selector (1, 0, 0) => 100 */
+#first-div {
+  color: lightcyan;
+}
+
+/* (important, inline, ids, classes, elements) */
+/* (0, 2, 0) */
+.class-one.class-two {
+  background-color: cyan;
+}
+
+/* Equal specificity: order is important! */
+.class-two {
+  background-color: lightsalmon;
+}
+
+.class-one {
+  background-color: greenyellow;
+}
+
+/* !important (1, 0, 0, 0, 0) => 10000 */
+div {
+  color: palevioletred !important;
+  background-color: white;
+}

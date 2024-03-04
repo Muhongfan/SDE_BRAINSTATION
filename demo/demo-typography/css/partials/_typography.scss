@@ -1,0 +1,40 @@
+// @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/barlow/v12/7cHrv4kjgoGqM7E3b_s7wH8Dnzcj.woff2)
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/barlow/v12/7cHqv4kjgoGqM7E30-8s51ostz0rdg.woff2)
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Calistoga";
+  src: url("../fonts/calistoga/Calistoga-Regular.woff2") format("woff2"),
+    url("../fonts/calistoga/Calistoga-Regular.woff") format("woff");
+}
+
+.font-demo {
+  &--installed {
+    font-family: "Comic Sans MS", sans-serif;
+  }
+
+  &--local {
+    font-family: "Calistoga", serif;
+  }
+
+  &--remote {
+    font-family: "Barlow", system-ui;
+    font-weight: bold;
+  }
+}

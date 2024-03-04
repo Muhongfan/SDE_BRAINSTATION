@@ -1,0 +1,74 @@
+@use "partials/motion";
+
+$transition-duration: 0.5s;
+
+body {
+  background-color: azure;
+}
+
+button {
+  // reset
+  background: transparent;
+  border: none;
+  padding: 0;
+
+  background: pink;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: 2px solid darkmagenta;
+  cursor: pointer;
+  transition: background $transition-duration, color $transition-duration,
+    box-shadow $transition-duration, transform $transition-duration;
+
+  // button:hover
+  &:hover {
+    background: darkmagenta;
+    color: white;
+    box-shadow: 0 2px 8px 2px rgb(0 0 0 / 40%);
+    transform: scale(1.1);
+  }
+}
+
+.message {
+  background: darkorange;
+  border: 4px dotted red;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  opacity: 0.25;
+  transition: 0.5s;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+
+  &:hover {
+    border-width: 1rem;
+    padding: 2rem;
+    font-size: 200%;
+    opacity: 1;
+  }
+}
+
+.transform-example {
+  width: 100px;
+  height: 100px;
+  background-color: deepskyblue;
+  margin: 1rem;
+
+  transform: translate(20px, 60px) rotate(45deg);
+}
+
+.animation-example {
+  width: 100px;
+  height: 100px;
+  // background-color: lightseagreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+
+  &:hover {
+    animation: scale-and-spin 0.5s 6 alternate;
+  }
+}

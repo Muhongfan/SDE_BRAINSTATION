@@ -1,0 +1,73 @@
+/*
+    General styles to make the demo page nice and pretty.
+    Nothing to do with font-face and typography examples!
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #eeeeee;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+main {
+  margin: 0 2rem 5rem;
+}
+
+section {
+  background-color: #ffffff;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+code {
+  display: inline-block;
+  background-color: #eeeeee;
+  border: 1px solid #cccccc;
+  padding: 0 0.25rem;
+  margin: 2px 0;
+  border-radius: 5px;
+}
+
+/* Make our examples big and pretty */
+.font-demo {
+  border-top: 2px solid #dddddd;
+  padding-top: 1rem;
+  font-size: 1.33rem;
+}
+
+@font-face {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/barlow/v12/7cHrv4kjgoGqM7E3b_s7wH8Dnzcj.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/barlow/v12/7cHqv4kjgoGqM7E30-8s51ostz0rdg.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Calistoga";
+  src: url("../fonts/calistoga/Calistoga-Regular.woff2") format("woff2"), url("../fonts/calistoga/Calistoga-Regular.woff") format("woff");
+}
+.font-demo--installed {
+  font-family: "Comic Sans MS", sans-serif;
+}
+.font-demo--local {
+  font-family: "Calistoga", serif;
+}
+.font-demo--remote {
+  font-family: "Barlow", system-ui;
+  font-weight: bold;
+}/*# sourceMappingURL=main.css.map */

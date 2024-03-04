@@ -414,3 +414,132 @@ Desire
 Education
 ![alt text](img/craftstory.png)
 ![alt text](img/craftstory-template.png)
+
+## Position&flow
+
+Control the flow of the elments in the page.
+
+```css
+.css_container{
+    position:static|fixed|absolute| relative;
+
+}
+```
+* `relative/absolute`
+For example, a grey shadow box is above the background image. And assume the content of the grey shadow is larger then the container. (Apply `overflow:hidden` if the content overflow the parent box.)
+```css
+.css_container{
+    position:relative;
+    overflow:hidden;
+
+}
+<!--Hide the content and roll up if requried for appreaing-->
+.css_text{
+    position:absolute;
+    top:180px;
+    transition:0.5s
+
+}
+.css_text:hover{
+    top:0;
+}
+```
+
+* `fixed`
+Fix the position of the element in the viewpoint. 
+
+For example, a navigation is expected to be fixed on top of the pag always.
+
+```css
+.nav{
+    position:fixed;    
+}
+```
+
+`z-index`: The stack level of the box in the current stacking context
+
+*`float`
+Allow text elements to flow around the image. **Not** used for layout.
+
+
+For example: locate an image on the left and let the text flow around it. The image is assumed as a cirle shape.
+```css
+img{
+    float: left;
+    shape-outside: circle(50%)
+}
+```
+## Sass
+It is like to define the globle variables of the values of properties which is much more rewritable for CSS code in future.
+![SASS](https://www.w3schools.com/sass/sass_variables.php)
+
+Features:
+
+1. Variables: `$<variable_name>`
+```SCSS
+$primary-color:#333;
+body{
+    color:$primary-color
+}
+```
+2. Mixins: `@mixin` + `@include`
+```SCSS
+@mixin border-radius($radius){
+    border-radius:$radius;
+    margin:0;
+}
+.box{
+    @include border-radius(10px);
+}
+```
+3. Extend: `@extend` 
+
+## Typography
+
+## Responsive 
+```SCSS
+@media (min-width:600px){
+  body{
+    background-color: #8ddaf8;
+  .site-header{
+    &__wrapper{
+      flex-direction:row;
+      }
+  }
+  .card{
+    width:50%
+  }
+  }
+}
+```
+* `@media (min-width: 600px)`: A media query specifying a condition that the viewport's minimum width must be 600 pixels or more for the styles inside the media query to take effect.
+
+* `body { background-color: #8ddaf8;}`: When the viewport width meets the condition, the background color of the body element is set to #8ddaf8.
+
+* `.site-header__wrapper { flex-direction: row; }`: If an element with the class `.site-header__wrapper` exists, its flex-direction property is set to row. This is commonly used in Flexbox layouts to arrange its child elements horizontally.
+
+* `.card { width: 50%; }`: If an element with the class .card exists, its width is set to 50% of the viewport width. This can make card elements occupy a certain width on larger screens.
+
+The purpose of the code is to adjust the styles of page elements based on different viewport widths, aiming to provide a better user experience on various devices. This concept is fundamental to responsive design.
+
+
+ 
+ ## Media Query
+ A max-width media query triggers styles for smaller screens when the viewport or device width is less than a certain number or pixels. It is the maximum width before styles stop being applied. CSS styles are ordered from largest to smallest.
+
+ `_variables.scss`:
+ ```scss
+ $tablet-breakpoint: 768px;
+```
+Import `__variables.scss` in `_mixins.scss`:
+ ```scss
+@use 'variables' as *;
+
+@mixin tablet {
+  @media screen and (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+```
+In `main.scss`, here is the content in the scss file as `@content;`
+

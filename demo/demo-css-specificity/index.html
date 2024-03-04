@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles-2.css" />
+  </head>
+  <body>
+    <h1>Demo: CSS Specificity</h1>
+
+    <section>
+      <h2>Specificity</h2>
+
+      <div class="conflict-example" id="first-div">I am a div!</div>
+
+      <!-- Inline styles are not best practice (1, 0, 0, 0) = 1000 -->
+    </section>
+
+    <section>
+      <h2>Complex selectors</h2>
+
+      <section>
+        <h3>Multiple selectors</h3>
+
+        <div class="class-one class-two class-four">I have two classes!</div>
+
+        <div id="special-element">I am so special!</div>
+      </section>
+    </section>
+
+    <section class="grandparent">
+      I am a grandparent!
+
+      <div class="parent">
+        I am a parent!
+
+        <div class="child">I am a child!</div>
+      </div>
+
+      <ul>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+        <li>Four</li>
+      </ul>
+    </section>
+  </body>
+</html>

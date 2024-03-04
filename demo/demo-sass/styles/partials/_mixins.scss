@@ -1,0 +1,15 @@
+@use "variables" as *;
+
+@mixin heading-style {
+  font-size: $heading-font-size;
+  color: darkmagenta;
+}
+
+@mixin card($padding, $font-colour: black) {
+  padding: $padding;
+  margin-bottom: 2rem;
+  background: white;
+  color: $font-colour;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.5);
+}

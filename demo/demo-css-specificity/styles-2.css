@@ -1,0 +1,35 @@
+/* Multiple selector */
+.class-one.class-two {
+  background-color: orange;
+}
+
+/* Grouped selector */
+.class-one,
+#special-element {
+  font-weight: bold;
+  font-size: 150%;
+  color: black;
+}
+
+/* This is fine! */
+.class-one#special-element {
+}
+
+.grandparent {
+  margin: 2rem 0;
+}
+
+/* Descendant selector */
+.grandparent .child {
+  background-color: yellow;
+}
+
+/* Child selector */
+.grandparent > .parent {
+  background-color: pink;
+}
+
+/* Pseudo-classes */
+ul > li:nth-of-type(2n) {
+  color: lightseagreen;
+}

@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  font-size: 100%;
+  color: darkmagenta;
+  text-decoration: underline;
+}
+
+body {
+  background-color: lightseagreen;
+  font-family: sans-serif;
+  padding: 1rem;
+}
+
+div {
+  padding: 1rem;
+}
+
+.card {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  background: white;
+  color: black;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* also a comment */
+.product {
+  padding: 2rem;
+  margin-bottom: 2rem;
+  background: white;
+  color: blue;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.5);
+}
+.product__title {
+  text-decoration: none;
+  color: black;
+}
+.product__title--large {
+  font-size: 150%;
+}
+.product__image {
+  max-width: 80%;
+  border: 2px solid orange;
+}
+.product--featured {
+  background: linear-gradient(red, orange);
+  color: white;
+}/*# sourceMappingURL=main.css.map */

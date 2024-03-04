@@ -1,0 +1,71 @@
+@keyframes scale-and-spin {
+  from {
+    transform: scale(1) rotate(0);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  to {
+    transform: scale(1.1) rotate(5deg);
+  }
+}
+body {
+  background-color: azure;
+}
+
+button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  background: pink;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: 2px solid darkmagenta;
+  cursor: pointer;
+  transition: background 0.5s, color 0.5s, box-shadow 0.5s, transform 0.5s;
+}
+button:hover {
+  background: darkmagenta;
+  color: white;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.4);
+  transform: scale(1.1);
+}
+
+.message {
+  background: darkorange;
+  border: 4px dotted red;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  opacity: 0.25;
+  transition: 0.5s;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+.message:hover {
+  border-width: 1rem;
+  padding: 2rem;
+  font-size: 200%;
+  opacity: 1;
+}
+
+.transform-example {
+  width: 100px;
+  height: 100px;
+  background-color: deepskyblue;
+  margin: 1rem;
+  transform: translate(20px, 60px) rotate(45deg);
+}
+
+.animation-example {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
+.animation-example:hover {
+  animation: scale-and-spin 0.5s 6 alternate;
+}/*# sourceMappingURL=main.css.map */

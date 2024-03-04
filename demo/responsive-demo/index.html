@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="css, responsive, design" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Demo</title>
+    <link rel="stylesheet" href="./style/main.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="site-header__wrapper">
+        <a href="#" class="logo">logo</a>
+        <nav class="primary-nav">
+          <ul class="primary-nav__list">
+            <li class="primary-nav__item">
+              <a href="#" class="primary-nav__link primary-nav__link--active"
+                >home</a
+              >
+            </li>
+            <li class="primary-nav__item">
+              <a href="#" class="primary-nav__link">about</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="banner">
+      <h1 class="banner__title">Responsive Demo</h1>
+    </section>
+
+    <main class="site-main">
+      <h2 class="site-main__title">Site Main</h2>
+      <section class="card-section">
+        <h3 class="card-section__title">Cards</h3>
+
+        <div class="card-section__flex-container">
+          <article class="card">
+            <a class="card__link-wrapper" href="#" title="calming flowers">
+              <h4 class="card__title">Flowers</h4>
+              <img
+                class="card__img"
+                src="./assets/images/calm-flowers.jpg"
+                alt="calming flowers"
+              />
+              <p class="card__description">some lovely flowers</p>
+            </a>
+          </article>
+          <article class="card">
+            <a class="card__link-wrapper" href="#" title="grass field">
+              <h4 class="card__title">Grass</h4>
+              <img
+                class="card__img"
+                src="./assets/images/calm-grass.jpg"
+                alt="grass field"
+              />
+              <p class="card__description">a lovely grass field</p>
+            </a>
+          </article>
+
+          <article class="card">
+            <a class="card__link-wrapper" href="#" title="rolling hills">
+              <h4 class="card__title">Hills</h4>
+              <img
+                class="card__img"
+                src="./assets/images/hills.jpg"
+                alt="rolling hills"
+              />
+              <p class="card__description">Rolling hill shadows</p>
+            </a>
+          </article>
+
+          <article class="card">
+            <a class="card__link-wrapper" href="#" title="rolling hills">
+              <h4 class="card__title">Sand</h4>
+              <img
+                class="card__img"
+                src="./assets/images/calm-sand.jpg"
+                alt="rolling hills"
+              />
+              <p class="card__description">Calming sand</p>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- I "made" this in Figma and attempted to animate :) -->
+      <svg
+        class="fan-svg"
+        width="100%"
+        height="100%"
+        viewBox="0 0 1440 900"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g clip-path="url(#clip0)">
+          <rect width="1440" height="900" fill="white" />
+          <g class="test">
+            <rect
+              class="fan-svg__sky"
+              width="1440"
+              height="900"
+              fill="#CBF3FF"
+            />
+            <rect
+              class="fan-svg__grass"
+              y="490"
+              width="1440"
+              height="410"
+              fill="#2C862A"
+            />
+            <path
+              class="fan-svg__building"
+              d="M414.551 274H470.449L544 603H341L414.551 274Z"
+              fill="#694747"
+            />
+            <g class="fan-svg__blade">
+              <circle cx="441.164" cy="273.847" r="40" fill="#9A8686" />
+              <rect
+                x="325.638"
+                y="95.75"
+                width="23"
+                height="424"
+                transform="rotate(-30 325.638 95.75)"
+                fill="#9A8686"
+              />
+              <rect
+                x="619.445"
+                y="157.638"
+                width="23"
+                height="424"
+                transform="rotate(60 619.445 157.638)"
+                fill="#9A8686"
+              />
+            </g>
+          </g>
+        </g>
+        <defs>
+          <clipPath>
+            <rect width="1440" height="900" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+    </main>
+    <footer class="site-footer">
+      <div class="site-footer__wrapper">
+        <section class="site-footer__left">
+          <h3 class="site-footer__title">About</h3>
+          <p class="site-footer__text">Additional info about this website.</p>
+          <p class="site-footer__text">
+            Built with
+            <img
+              src="./assets/icons/heart.svg"
+              alt="heart icon"
+              class="site-footer__icon"
+            />
+            ,
+            <img
+              src="./assets/icons/coffee.svg"
+              alt="coffee icon"
+              class="site-footer__icon"
+            />
+            , and
+            <svg
+              class="site-footer__svg"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="640"
+              height="512"
+              viewBox="0 0 640 512"
+            >
+              <g id="icomoon-ignore"></g>
+              <path d="M416 368l48 48 160-160-160-160-48 48 112 112z"></path>
+              <path d="M224 144l-48-48-160 160 160 160 48-48-112-112z"></path>
+              <path
+                d="M350.649 75.26l34.734 9.472-95.993 352.013-34.734-9.472 95.994-352.013z"
+              ></path>
+            </svg>
+          </p>
+        </section>
+        <section class="site-footer__right">
+          <img
+            class="site-footer__img"
+            src="./assets/images/house.png"
+            alt="house pixel art"
+          />
+          <h3 class="site-footer__title">Contact</h3>
+          <p class="site-footer__text">
+            phone:
+            <a class="site-footer__link" href="tel:555-555-5555"
+              >555-555-5555</a
+            >
+          </p>
+          <p class="site-footer__text">
+            email:
+            <a class="site-footer__link" href="mailto:neo@cats.com"
+              >neo@example.com</a
+            >
+          </p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

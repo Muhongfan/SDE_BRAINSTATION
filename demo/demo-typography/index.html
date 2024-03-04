@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typography Demo</title>
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <main>
+      <h1>@font-face demo</h1>
+
+      <section>
+        <h2>Setup</h2>
+        <p>
+          To use @font-face, you need to specify at least the following two
+          properties:
+        </p>
+        <ul>
+          <li>
+            <strong>font-family</strong>: the name that will be used as the
+            font-face value for font properties
+          </li>
+          <li>
+            <strong>src</strong>: resource(s) containing the font data; can be
+            single or a comma-separated list of URLs or names of fonts on the
+            user's computer
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Installed Fonts</h2>
+        <p>
+          For installed fonts, all you need to do is specify the
+          <code>font-family</code>, for example
+          <code>font-family: 'Comic Sans MS';</code>
+        </p>
+        <p class="font-demo font-demo--installed">
+          This text is using a font installed on the user's computer!
+        </p>
+      </section>
+
+      <section>
+        <h2>Locally Hosted Custom Fonts (@font-face)</h2>
+        <p>
+          To use locally hosted fonts, provide the <code>@font-face</code> with
+          a <code>src</code> containing the path to where the font is stored.
+          For example,
+          <code>url('../fonts/Calistoga/Calistoga-Regular.ttf')</code>
+        </p>
+        <p>
+          Optionally, you can specify the format of the
+          <code>src</code> definition by ending it with
+          <code> format('[FORMAT]')</code>
+        </p>
+
+        <p class="font-demo font-demo--local">
+          This text is using a locally hosted font!
+        </p>
+      </section>
+
+      <section>
+        <h2>Remotely Hosted Custom Fonts (@font-face)</h2>
+        <p>
+          To use remotely hosted fonts, provide the <code>@font-face</code> with
+          a <code>src</code> containing a url to where the font is hosted. For
+          example,
+          <code>
+            url('https://fonts.gstatic.com/s/pacifico/v16/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2')
+          </code>
+        </p>
+        <p>
+          Or, you can use the stylesheet provided by the remote host. For
+          example,
+          <code>
+            &lt;link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+            /&gt;
+          </code>
+        </p>
+
+        <p class="font-demo font-demo--remote">
+          This text is using a remotely hosted font on Google Fonts!
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+@use "partials/reset";
+@use "partials/variables" as *;
+@use "partials/mixins" as *;
+
+h1,
+h2 {
+  @include heading-style;
+  text-decoration: underline;
+}
+
+body {
+  background-color: $primary-colour;
+  font-family: sans-serif;
+  padding: $body-padding;
+}
+
+div {
+  padding: $body-padding;
+}
+
+.card {
+  @include card(1rem);
+}
+
+// block
+/* also a comment */
+.product {
+  @include card(2rem, blue);
+
+  // element
+  &__title {
+    text-decoration: none;
+    color: black;
+
+    &--large {
+      font-size: 150%;
+    }
+  }
+
+  // element
+  &__image {
+    max-width: 80%;
+    border: 2px solid orange;
+  }
+
+  &--featured {
+    background: linear-gradient(red, orange);
+    color: white;
+  }
+}
